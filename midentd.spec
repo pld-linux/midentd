@@ -14,8 +14,13 @@ URL:		http://panorama.sth.ac.at/midentd/
 BuildRequires:	perl-devel
 Prereq:		rc-inetd
 Provides:	identserver
+Obsoletes:      linux-identd
+Obsoletes:      linux-identd-inetd
+Obsoletes:      linux-identd-standalone
 Obsoletes:	pidentd
 Obsoletes:	oidentd
+Obsoletes:	oidentd-standalone
+Obsoletes:	oidentd-inetd
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
