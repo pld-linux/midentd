@@ -6,8 +6,6 @@ Version:	2.3.1
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
