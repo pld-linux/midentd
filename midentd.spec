@@ -14,10 +14,10 @@ URL:		http://panorama.sth.ac.at/midentd/
 BuildRequires:	perl-devel
 Prereq:		rc-inetd
 Provides:	identserver
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Buildarch:	noarch
 Obsoletes:	pidentd
 Obsoletes:	oidentd
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 midentd is an identd replacement with masquerading support. With your
