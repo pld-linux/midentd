@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
+# Source0-md5:	84aca797c2569667a52fa9f5d4ac3e21
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://panorama.sth.ac.at/midentd/
