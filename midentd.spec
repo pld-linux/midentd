@@ -12,15 +12,15 @@ Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://panorama.sth.ac.at/midentd/
 BuildRequires:	perl-devel
-Prereq:		rc-inetd
+PreReq:		rc-inetd
 Provides:	identserver
-Obsoletes:      linux-identd
-Obsoletes:      linux-identd-inetd
-Obsoletes:      linux-identd-standalone
-Obsoletes:	pidentd
+Obsoletes:	linux-identd
+Obsoletes:	linux-identd-inetd
+Obsoletes:	linux-identd-standalone
 Obsoletes:	oidentd
 Obsoletes:	oidentd-standalone
 Obsoletes:	oidentd-inetd
+Obsoletes:	pidentd
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
