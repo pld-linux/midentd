@@ -40,7 +40,7 @@ otrzymaj± poprawnej odpowiedzi o ident.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{/etc/sysconfig/rc-inetd,/etc/logrotate.d,%{_sbindir},/var/log}
-			
+
 install midentd $RPM_BUILD_ROOT%{_sbindir}
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/midentd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/logrotate.d/midentd
