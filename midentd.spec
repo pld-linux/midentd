@@ -1,16 +1,18 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Ident server with masquerading support
 Summary(pl):	Ident serwer z obs³ug± maskowanych adresów IP
 Name:		midentd
-Version:	1.6
+Version:	2.2
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
-Source0:	http://p8ur.op.het.net/midentd/%{name}-%{version}.tar.gz
+Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
-URL:		http://p8ur.op.het.net/midentd/
+URL:		http://panorama.sth.ac.at/midentd/
+BuildRequires:	perl-devel
 Prereq:		rc-inetd
 Provides:	identserver
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,11 +43,11 @@ otrzymaj± poprawnej odpowiedzi o ident.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{/etc/sysconfig/rc-inetd,/etc/logrotate.d,%{_sbindir},/var/log}
 			
-install midentd midentdconfig $RPM_BUILD_ROOT%{_sbindir}
+install midentd $RPM_BUILD_ROOT%{_sbindir}
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/midentd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/logrotate.d/midentd
 
-gzip -9nf README CHANGES LICENSE midentd.conf midentd.mircusers
+gzip -9nf CHANGELOG README
 :> $RPM_BUILD_ROOT%{_sysconfdir}/midentd.conf
 :> $RPM_BUILD_ROOT%{_sysconfdir}/midentd.mircusers
 :> $RPM_BUILD_ROOT/var/log/midentd.log
