@@ -30,7 +30,7 @@ a valid ident reply.
 midentd jest serwerem us³ugi ident z obs³ug± maskowania adresów.
 Je¿eli masz zainstalowanego zwyk³ego identd oraz korzystasz z
 maskowania adresów przy zapytaniu o maskowane po³±czenie identd zwraca
-'ERROR : NO-USER' kyb co¶ w tym stylu. To mo¿e byæ czasami irytuj±ce,
+'ERROR : NO-USER' lub co¶ w tym stylu. To mo¿e byæ czasami irytuj±ce,
 na przyk³ad jak serwery IRC-a nie chc± Ciê wpu¶ciæ je¿eli nie
 otrzymaj± poprawnej odpowiedzi o ident.
 
