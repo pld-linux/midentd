@@ -3,7 +3,7 @@ Summary:	Ident server with masquerading support
 Summary(pl):	Ident serwer z obs³ug± maskowanych adresów IP
 Name:		midentd
 Version:	2.3.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
@@ -45,7 +45,6 @@ install midentd $RPM_BUILD_ROOT%{_sbindir}
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/midentd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/logrotate.d/midentd
 
-gzip -9nf CHANGELOG README
 :> $RPM_BUILD_ROOT%{_sysconfdir}/midentd.conf
 :> $RPM_BUILD_ROOT%{_sysconfdir}/midentd.mircusers
 :> $RPM_BUILD_ROOT/var/log/midentd.log
@@ -67,7 +66,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CHANGELOG README
 %attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/midentd
 %config(noreplace) %verify(not mtime md5 size) %{_sysconfdir}/midentd.*
 %attr(755,root,root) %{_sbindir}/*
