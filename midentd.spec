@@ -3,7 +3,7 @@ Summary:	Ident server with masquerading support
 Summary(pl):	Ident serwer z obs³ug± maskowanych adresów IP
 Name:		midentd
 Version:	2.3.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
