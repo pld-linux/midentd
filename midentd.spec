@@ -71,5 +71,5 @@ fi
 %attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/midentd
 %config(noreplace) %verify(not mtime md5 size) %{_sysconfdir}/midentd.*
 %attr(755,root,root) %{_sbindir}/*
-%config /etc/logrotate.d/midentd
+%attr(640,root,root) %config(noreplace) %verify(not size mtime md5) /etc/logrotate.d/midentd
 %attr(0600,nobody,root) %ghost /var/log/midentd.log
