@@ -7,7 +7,7 @@ License:	GPL
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://p8ur.op.het.net/midentd/%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://p8ur.op.het.net/midentd/
