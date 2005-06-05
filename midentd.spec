@@ -11,7 +11,7 @@ Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://panorama.sth.ac.at/midentd/
-BuildRequires:	perl-devel
+BuildRequires:	rpm-perlprov
 PreReq:		rc-inetd
 Provides:	identserver
 Obsoletes:	linux-identd
