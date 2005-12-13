@@ -12,7 +12,7 @@ Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://panorama.sth.ac.at/midentd/
 BuildRequires:	rpm-perlprov
-PreReq:		rc-inetd
+Requires:	rc-inetd
 Provides:	identserver
 Obsoletes:	linux-identd
 Obsoletes:	linux-identd-inetd
@@ -73,8 +73,8 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG README
-%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/midentd
-%config(noreplace) %verify(not mtime md5 size) %{_sysconfdir}/midentd.*
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/rc-inetd/midentd
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/midentd.*
 %attr(755,root,root) %{_sbindir}/*
-%attr(640,root,root) %config(noreplace) %verify(not size mtime md5) /etc/logrotate.d/midentd
-%attr(0600,nobody,root) %ghost /var/log/midentd.log
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/logrotate.d/midentd
+%attr(600,nobody,root) %ghost /var/log/midentd.log # FIXME nobody user/group can't own files! -adapter.awk
