@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Ident server with masquerading support
-Summary(pl):	Ident serwer z obs³ug± maskowanych adresów IP
+Summary(pl.UTF-8):   Ident serwer z obsÅ‚ugÄ… maskowanych adresÃ³w IP
 Name:		midentd
 Version:	2.3.1
 Release:	4
@@ -33,13 +33,13 @@ something along those lines. This may be quite irritating at times,
 with, for example, IRC servers that won't let you in if they don't get
 a valid ident reply.
 
-%description -l pl
-midentd jest serwerem us³ugi ident z obs³ug± maskowania adresów.
-Je¿eli masz zainstalowanego zwyk³ego identd oraz korzystasz z
-maskowania adresów przy zapytaniu o maskowane po³±czenie identd zwraca
-'ERROR : NO-USER' lub co¶ w tym stylu. To mo¿e byæ czasami irytuj±ce,
-na przyk³ad jak serwery IRC-a nie chc± Ciê wpu¶ciæ je¿eli nie
-otrzymaj± poprawnej odpowiedzi o ident.
+%description -l pl.UTF-8
+midentd jest serwerem usÅ‚ugi ident z obsÅ‚ugÄ… maskowania adresÃ³w.
+JeÅ¼eli masz zainstalowanego zwykÅ‚ego identd oraz korzystasz z
+maskowania adresÃ³w przy zapytaniu o maskowane poÅ‚Ä…czenie identd zwraca
+'ERROR : NO-USER' lub coÅ› w tym stylu. To moÅ¼e byÄ‡ czasami irytujÄ…ce,
+na przykÅ‚ad jak serwery IRC-a nie chcÄ… CiÄ™ wpuÅ›ciÄ‡ jeÅ¼eli nie
+otrzymajÄ… poprawnej odpowiedzi o ident.
 
 %prep
 %setup -q
