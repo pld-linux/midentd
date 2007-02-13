@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Ident server with masquerading support
-Summary(pl.UTF-8):   Ident serwer z obsługą maskowanych adresów IP
+Summary(pl.UTF-8):	Ident serwer z obsługą maskowanych adresów IP
 Name:		midentd
 Version:	2.3.1
 Release:	4
