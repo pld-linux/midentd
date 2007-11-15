@@ -74,4 +74,5 @@ fi
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/midentd.*
 %attr(755,root,root) %{_sbindir}/*
 %attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/logrotate.d/midentd
-%attr(600,nobody,root) %ghost /var/log/midentd.log # FIXME nobody user/group can't own files! -adapter.awk
+# FIXME nobody user/group can't own files! -adapter.awk
+%attr(600,nobody,root) %ghost /var/log/midentd.log
