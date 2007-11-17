@@ -11,6 +11,7 @@ Source0:	http://panorama.sth.ac.at/midentd/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Source2:	%{name}.logrotate
 URL:		http://panorama.sth.ac.at/midentd/
+BuildRequires:	files-ownership(nobody-must-not-own-any-files)
 BuildRequires:	rpm-perlprov
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	rc-inetd
